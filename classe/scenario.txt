@@ -1,0 +1,11 @@
+  public void scenario() {
+    sortieWriter.println("Debut des traitements:");
+    Commande prochaine = saisisCommande(commandesReader);
+    while (prochaine != null) {
+      sortieWriter.println("\tTraitement de la commande " + prochaine + " ...");
+      Object resultat = traiteCommande(prochaine);
+      sortieWriter.println("\t\tResultat: " + resultat);
+      prochaine = saisisCommande(commandesReader);
+    }
+    sortieWriter.println("Fin des traitements");
+  }
