@@ -2,11 +2,14 @@ package classe;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Parser implements Serializable {
 
     private String myResultat;
     public ArrayList<String> myCommands = new ArrayList<String>();
+
 
     public Parser(String cmd) {
         for (String str: cmd.split("#")) {
