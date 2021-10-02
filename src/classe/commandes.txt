@@ -1,0 +1,25 @@
+compilation#./src/ca/uqac/registraire/Cours.java,./src/ca/uqac/registraire/Etudiant.java#./classes
+chargement#ca.uqac.registraire.Cours
+creation#ca.uqac.registraire.Cours#8inf853
+ecriture#8inf853#titre#Architecture des applications
+lecture#8inf853#titre
+creation#ca.uqac.registraire.Cours#8inf843
+ecriture#8inf843#titre#Systemes repartis
+chargement#ca.uqac.registraire.Etudiant
+creation#ca.uqac.registraire.Etudiant#mathilde
+ecriture#mathilde#nom#Mathilde Boivin
+creation#ca.uqac.registraire.Etudiant#raymond
+ecriture#raymond#nom#Raymond Sauve
+fonction#8inf853#getNote#ca.uqac.registraire.Etudiant:ID(mathilde)
+fonction#mathilde#inscrisDansCours#ca.uqac.registraire.Cours:ID(8inf853)
+fonction#8inf853#attributeNote#ca.uqac.registraire.Etudiant:ID(mathilde),float:3.7
+fonction#8inf853#getNote#ca.uqac.registraire.Etudiant:ID(mathilde)
+fonction#mathilde#inscrisDansCours#ca.uqac.registraire.Cours:ID(8inf843)
+fonction#8inf843#attributeNote#ca.uqac.registraire.Etudiant:ID(mathilde),float:4.0
+fonction#mathilde#getMoyenne#
+fonction#raymond#inscrisDansCours#ca.uqac.registraire.Cours:ID(8inf853)
+fonction#raymond#inscrisDansCours#ca.uqac.registraire.Cours:ID(8inf843)
+fonction#8inf853#attributeNote#ca.uqac.registraire.Etudiant:ID(raymond),float:3.0
+fonction#8inf843#attributeNote#ca.uqac.registraire.Etudiant:ID(raymond),float:2.7
+fonction#mathilde#getMoyenne#
+fonction#8inf853#toString#
