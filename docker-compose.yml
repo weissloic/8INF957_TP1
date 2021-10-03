@@ -1,0 +1,25 @@
+version: '3.3'
+
+services:
+  java:
+    image: azul/zulu-openjdk:15
+
+    networks:
+      linking:
+    expose:
+      - "3333"
+    volumes:
+      - ./src/:/src
+    command: bash -c "cd /src && javac server/Server.java && java server.Server 3333 dqzdqz"
+  javaclient:
+    image: azul/zulu-openjdk:15
+    networks:
+      linking:
+    expose:
+      - "3333"
+    volumes:
+      - ./src:/src
+    command: bash -c "cd /src && javac client/src/main.java && java client.src.MyClient java 3333 classe/commandes.txt ui"
+
+networks:
+  linking:

@@ -104,17 +104,7 @@ class Server {
 
             JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
             int resCompil = compiler.run(null, null, null, classToCompile);
-
-            if (resCompil == 0) {
-                int index = classToCompile.lastIndexOf(".");
-                String filename = classToCompile.substring(classToCompile.lastIndexOf("/"), index).replace("/", "");
-                try {
-                    Files.move(Paths.get(classToCompile.substring(0, index) + ".class"), Paths.get("./src/server/" + filename + ".class"), StandardCopyOption.REPLACE_EXISTING);
-                    result = "Classe compilée: " + classToCompile;
-                } catch (IOException e) {
-                    e.printStackTrace(ps);
-                }
-            }
+            result = "Classe compilée: " + classToCompile;
         }
 
         /**
@@ -225,11 +215,11 @@ class Server {
                 }
                 return value;
             } catch (NoSuchMethodException e) {
-                e.printStackTrace(ps);
+                e.printStackTrace();
             } catch (IllegalAccessException e) {
-                e.printStackTrace(ps);
+                e.printStackTrace();
             } catch (InvocationTargetException e) {
-                e.printStackTrace(ps);
+                e.printStackTrace();
             }
             return null;
         }
